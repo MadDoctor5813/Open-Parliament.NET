@@ -9,17 +9,11 @@ namespace Open_Parliament.NET
     public class OpenParliament
     {
 
-        private WebClient client;
+        RequestHelper requestHelper;
 
         public OpenParliament(string userAgent)
         {
-            createClient();
-        }
-
-        private void createClient()
-        {
-            client = new WebClient();
-            client.Headers["User-Agent"] = userAgent;
+            requestHelper = new RequestHelper(userAgent);
         }
 
     }
