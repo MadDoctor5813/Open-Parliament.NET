@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Open_Parliament.NET_Testing</RootNamespace>
-    <AssemblyName>Open_Parliament.NET_Testing</AssemblyName>
+    <AssemblyName>Open-Parliament.NET Testing</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,6 +42,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Open-Parliament.NET\Open-Parliament.NET.csproj">
+      <Project>{4ab0d28f-729b-4f6f-88f5-e805b1e5a6c4}</Project>
+      <Name>Open-Parliament.NET</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
