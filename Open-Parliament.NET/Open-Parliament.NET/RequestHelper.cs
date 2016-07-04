@@ -22,7 +22,7 @@ namespace Open_Parliament.NET
         public string makeJSONRequest(string query)
         {
             byte[] response = webClient.DownloadData(API_ROOT + query);
-            return BitConverter.ToString(response);
+            return UTF8Encoding.UTF8.GetString(response);
         }
 
     }
