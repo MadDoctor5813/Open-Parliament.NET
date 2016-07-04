@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Open_Parliament.NET.jsonmodels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -21,6 +22,11 @@ namespace Open_Parliament.NET
         public OpenParliament(string userAgent)
         {
             requestHelper = new RequestHelper(userAgent);
+        }
+
+        public Politician getPolitician(string name)
+        {
+            return RequestHelper.getJSONModel<Politician>("politicians/" + name);
         }
 
     }
