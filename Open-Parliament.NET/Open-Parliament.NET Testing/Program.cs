@@ -11,7 +11,8 @@ namespace Open_Parliament.NET_Testing
         static void Main(string[] args)
         {
             OpenParliament openParliament = new OpenParliament("OpenParliament.NET - Testing - dragn194@gmail.com");
-
+            Console.Write(openParliament.RequestHelper.makeJSONRequest("politicians/ziad-aboultaif/"));
+            Console.ReadKey();
         }
     }
 }
