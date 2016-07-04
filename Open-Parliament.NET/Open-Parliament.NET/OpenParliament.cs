@@ -9,7 +9,14 @@ namespace Open_Parliament.NET
     public class OpenParliament
     {
 
-        RequestHelper requestHelper;
+        public RequestHelper RequestHelper
+        {
+            get
+            {
+                return requestHelper;
+            }
+        }
+        private RequestHelper requestHelper;
 
         public OpenParliament(string userAgent)
         {
