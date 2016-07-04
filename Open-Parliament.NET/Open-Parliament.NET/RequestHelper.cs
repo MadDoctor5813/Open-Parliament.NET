@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Open_Parliament.NET
 {
-    class RequestHelper
+    public class RequestHelper
     {
 
         private WebClient webClient;
